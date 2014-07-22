@@ -23,8 +23,8 @@ noremap t h
 noremap m j
 
 " File Save and Compile
-map <f6> :w <CR>:!dmd % <CR>
-map! <F3> <Esc>
+map <F6> :w <CR>:!dmd % <CR>
+map <F2> :NERDTreeToggle <CR>
 
 set laststatus=2
 set backspace=2
@@ -62,7 +62,7 @@ set wrap "Wrap lines
 "set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ Path:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 if has("gui_running")
-	"colorscheme codeschool 
+	colorscheme codeschool 
 	set guifont=Inconsolata\ 12
 	set guioptions-=T	"Remove Toolbar
 	set guioptions-=r  	"Remove right-hand scroll bar
