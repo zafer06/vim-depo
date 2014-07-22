@@ -18,6 +18,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 syntax on
 
+let g:airline_powerline_fonts = 1
+
 " F keybord array keys
 noremap t h
 noremap m j
@@ -63,7 +65,7 @@ set wrap "Wrap lines
 
 if has("gui_running")
 	colorscheme codeschool 
-	set guifont=Inconsolata\ 12
+	set guifont=Inconsolata\ for\ Powerline\ 12
 	set guioptions-=T	"Remove Toolbar
 	set guioptions-=r  	"Remove right-hand scroll bar
 	set guioptions-=L  	"Remove left-hand scroll bar
